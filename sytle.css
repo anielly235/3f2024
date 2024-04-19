@@ -7,12 +7,6 @@
     --botao-inativo: rgba(58,55,94,0.5);
     --texto-fundo: rgba(58,55,94,0.3);
 }
-
-/* 1) "chamando" as tags"
-
-     2) "chamando" as classes (chamndos com nome-da-
-     3) "chamando" as IDS; 
-    */     
 *{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
@@ -24,7 +18,31 @@ span{
 
 .conteudo-principal{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+.botao{
+    background-color: var(--botao-inativo);
+    color: white;
+    /*Define a cor da fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Definem a forma de exibiçao */
+    padding: 1em;
+    /* Afastamento interno*/
+    font-size: 18px;
+    /* Muda o tamanho da fonte */
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var (--botao-ativo);
+    border-right: 2px solid var (--botao-ativo);
 }
