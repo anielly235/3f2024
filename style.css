@@ -1,25 +1,32 @@
 :root{
-    --cor-de-fundo:#1e1e1e;
-    --verde:#6FFF57;
-    --branco:#FFFFFF;
-    --botao-ativo:#3A375E;
-    --botao-inativo:rgba(58,55,94,0.5);
-    --texto-fundo:rgba(58,55,94,0.3);
+    /* nomedavariável: valor */
+    --cor-de-fundo: #1e1e1e;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A3753;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
 }
-
 *{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
 }
-
 span{
-    color: var(--verde);
+ color: var(--branco);
 }
 .conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -42,19 +49,16 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var (--botao-ativo);
 }
-.botoes{
-    display: block;
-}
-.botao:first-child{
-    border-radius: 20px 20px 0 0;
-}
-.botao:last-child{
-    border-radius: 0 0 20px 20px;
-
-}
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+}
+.aba-conteudo{
+    background-color: var(--cor-de-fundo);
+    display: nome;
+}
+.aba-conteudo,.ativo{
+    display: flex;
 }
 @media screen and (min-width: 700px){
     .botoes{
