@@ -7,13 +7,18 @@
     --botao-inativo: rgba(58,55,94,0.5);
     --texto-fundo: rgba(58,55,94,0.3);
 }
-*{
+body{
     background-color: var(--cor-de-fundo);
+}
+*{
+    
     color: var(--branco);
 }
+
 span{
  color: var(--branco);
 }
+
 .conteudo-principal{
     display: flex;
     flex-direction: column;
@@ -49,17 +54,20 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var (--botao-ativo);
 }
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
 .aba-conteudo{
-    background-color: var(--cor-de-fundo);
-    display: nome;
+    display: none;
 }
-.aba-conteudo,.ativo{
-    display: flex;
+.aba-conteudo.ativo{
+    display: block;
 }
+.abas-textos{
+    background-color: #1e1e1e;
+}
+
 @media screen and (min-width: 700px){
     .botoes{
         display: flex;
