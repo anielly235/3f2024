@@ -28,16 +28,19 @@ function calculaTempo(tempoObjetivo){
     segundos = segundos%60;
     minutos = minutos%60;
     horas = horas%24;
+    return [dias,horas,minutos,segundos]
 
 }
-
+let contadorPrimeiro = calculaTempo(tempoObjetivo1)
+contador[0].textContent = `faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos,
+let contadorSegundo = calculaTempo(tempoObjetivo2)
+contador[1].textContent = `faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas, ${contadorSegundo[2]} minutos, ${contadorSegundo[3]} segundos`
 calculaTempo(tempoObjetivo1);
 calculaTempo(tempoObjetivo2);
 calculaTempo(tempoObjetivo3);
 calculaTempo(tempoObjetivo4);
 
 
-contador[0].textContent = `Faltam ${dias} Dias, ${horas} Horas, ${minutos} Minutos e ${segundos} Segundos`
 
 for (let i = 0 ; i < botoes.length ; i++){
     botoes[i].onclick = function (){
