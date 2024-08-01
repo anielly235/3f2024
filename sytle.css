@@ -1,0 +1,58 @@
+:root{
+   /* --nomedavariavel:valor */
+    --cor-de-fundo: #000000;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
+}
+
+/* 1) "chamando" as tags"
+
+     2) "chamando" as classes (chamndos com nome-da-
+     3) "chamando" as IDS; 
+    */     
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+
+span{
+    color: var(--verde);
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.contador{
+        padding: 0 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+.botao{
+    background-color: var(--botao-inativo);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px  solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+}

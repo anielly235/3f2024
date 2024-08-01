@@ -1,12 +1,10 @@
 const botoes = document.querySelectorAll(".botao");
-const conteudo = document.querySelectorAll(".aba-conteudo");
-const contador = document.querySelectorAll(".contador");
-
-contador[0].textContent = "Olá"
-const tempoObjetivo1 = new Date(2029,11,20,23,59)
-const tempoObjetivo2 = new Date(2025,11,30,23,59)
-const tempoObjetivo3 = new Date(2026,11,31,23,59)
-const tempoObjetivo4 = new Date(2030,11,23,23,59)
+const conteudo = document.querySelectorAll(".aba-conteudo")
+const contador = document.querySelectorAll(".contador")
+const tempoObjetivo1 = new Date(2025,10,30,20)
+const tempoObjetivo2 = new Date(2025,1,30,20)
+const tempoObjetivo3 = new Date(2025,3,30,20)
+const tempoObjetivo4 = new Date(2025,4,30,20)
 
 function calculaTempo(tempoObjetivo){
     const agora = new Date()
@@ -36,3 +34,15 @@ let contadorTerceiro = calculaTempo(tempoObjetivo2)
 contador[2].textContent = `Faltam ${contadorTerceiro[0]} dias, ${contadorTerceiro[1]} horas e ${contadorTerceiro[2]} minutos e ${contadorTerceiro[3]} segundos`
 let contadorQuarto = calculaTempo(tempoObjetivo2)
 contador[3].textContent = `Faltam ${contadorQuarto[0]} dias, ${contadorQuarto[1]} horas e ${contadorQuarto[2]} minutos e ${contadorQuarto[3]} segundos`
+// Definimos variáveis
+// Fazemos calculos usando as variáveis que criamos e o tempoObjetivo junto com agora
+for (let i = 0 ; i < botoes.length ; i++){
+    botoes[i].onclick = function (){
+        for (let j = 0; j < botoes.length ; j++){
+            botoes[j].classList.remove("ativo")
+            conteudo[j].classList.remove("ativo")
+        }
+        botoes[i].classList.add("ativo")
+        conteudo[i].classList.add("ativo")
+    }
+}
