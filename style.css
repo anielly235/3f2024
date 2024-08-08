@@ -30,7 +30,22 @@ span{
     width: 100%;
     max-width: 1200px;
 }
+.contador{
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 
+}
+.contador-digital-numero{
+    font-size 80px;
+    margin: 0;
+}
+.contador-digital-texto{
+    color: var(--verde);
+    font-size 20px;
+    margin: 0;
+}
 .titulo-principal{
     text-align: center;
     width: 100%;
